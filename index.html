@@ -16,8 +16,8 @@
       <h2>MyAccount</h2>
 
       <ul>
-        <li class="active">Dashboard</li>
-        <li>Profile</li>
+        <li class="active" data-page="dashboard">Dashboard</li>
+        <li data-page="profile">Profile</li>
         <li>Settings</li>
         <li>Logout</li>
       </ul>
@@ -27,36 +27,87 @@
     <main class="content">
 
       <header class="topbar">
-        <h1>Dashboard</h1>
+        <h1 id="pageTitle">Dashboard</h1>
 
         <button id="darkModeBtn">
           Dark Mode
         </button>
       </header>
 
-      <section class="cards">
+      <section class="dashboard-page page-view active">
+        <div class="cards">
 
-        <div class="card">
-          <h3>Total User</h3>
-          <p>1,245</p>
+          <div class="card">
+            <h3>Total User</h3>
+            <p>1,245</p>
+          </div>
+
+          <div class="card">
+            <h3>Messages</h3>
+            <p>87</p>
+          </div>
+
+          <div class="card">
+            <h3>Revenue</h3>
+            <p>$4,500</p>
+          </div>
+
         </div>
 
         <div class="card">
-          <h3>Messages</h3>
-          <p>87</p>
+          <h2>Hello world</h2>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Revenue</h3>
-          <p>$4,500</p>
+
+      <!-- PROFILE SECTION -->
+      <section class="profile-page page-view">
+
+        <div class="profile-card">
+
+          <div class="profile-header">
+            <img 
+              src="https://i.pravatar.cc/150" 
+              alt="profile"
+            >
+
+            <h2>Ariss Developer</h2>
+
+            <p>Frontend & AI Enthusiast</p>
+          </div>
+
+          <div class="profile-info">
+
+            <div class="info-box">
+              <h4>Email</h4>
+              <span>ariss@gmail.com</span>
+            </div>
+
+            <div class="info-box">
+              <h4>Location</h4>
+              <span>Indonesia</span>
+            </div>
+
+            <div class="info-box">
+              <h4>Skills</h4>
+              <span>HTML, CSS, JavaScript</span>
+            </div>
+
+            <div class="info-box">
+              <h4>Projects</h4>
+              <span>12 Completed</span>
+            </div>
+
+          </div>
+
+          <div class="profile-actions">
+            <button>Edit Profile</button>
+            <button class="logout">Logout</button>
+          </div>
+
         </div>
 
       </section>
-
-      <div class="card">
-        <h2>Hello world</h2>
-      </div>
-
     </main>
 
   </div>
