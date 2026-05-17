@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akun Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>MyAccount</h2>
+
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Profile</li>
+        <li>Settings</li>
+        <li>Logout</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <header class="topbar">
+        <h1>Dashboard</h1>
+
+        <button id="darkModeBtn">
+          Dark Mode
+        </button>
+      </header>
+
+      <section class="cards">
+
+        <div class="card">
+          <h3>Total User</h3>
+          <p>1,245</p>
+        </div>
+
+        <div class="card">
+          <h3>Messages</h3>
+          <p>87</p>
+        </div>
+
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$4,500</p>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
